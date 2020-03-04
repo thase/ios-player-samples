@@ -29,6 +29,7 @@
 		342B10DA1FFED58C00A2D343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342B10D91FFED58C00A2D343 /* Assets.xcassets */; };
 		342B10DD1FFED58C00A2D343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342B10DB1FFED58C00A2D343 /* LaunchScreen.storyboard */; };
 		342B10E01FFED58C00A2D343 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 342B10DF1FFED58C00A2D343 /* main.m */; };
+		7443CBBF41A12CFD6B94E59E /* Pods_OfflinePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76337F7DF4F78A8DE508D62 /* Pods_OfflinePlayer.framework */; };
 		E91C9E7823677A7600500348 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91CAA6D23675D1300290B60 /* VideoTableViewCell.xib */; };
 		E91CAA5E23673C9B00290B60 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E91CAA5D23673C9B00290B60 /* VideoTableViewCell.m */; };
 		E91CAA72236765AA00290B60 /* InterfaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E91CAA71236765AA00290B60 /* InterfaceManager.m */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BAAC7213FB0431651CF99D2 /* Pods-OfflinePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflinePlayer.debug.xcconfig"; path = "Target Support Files/Pods-OfflinePlayer/Pods-OfflinePlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		223B44E92003E7D400C6C60C /* DownloadsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadsViewController.m; sourceTree = "<group>"; };
 		223B44EA2003E7D400C6C60C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		223B44EB2003E7D400C6C60C /* VideosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosViewController.h; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		22EF4AD32003FEFF00F85A29 /* paused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paused.png; sourceTree = "<group>"; };
 		22EF4AD42003FEFF00F85A29 /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 		22EF4AD52003FEFF00F85A29 /* videoplaylist@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videoplaylist@2x.png"; sourceTree = "<group>"; };
+		24051E1CF124C8F4BF4DB314 /* Pods-OfflinePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OfflinePlayer.release.xcconfig"; path = "Target Support Files/Pods-OfflinePlayer/Pods-OfflinePlayer.release.xcconfig"; sourceTree = "<group>"; };
 		342B10CD1FFED58C00A2D343 /* OfflinePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OfflinePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		342B10D01FFED58C00A2D343 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		342B10D11FFED58C00A2D343 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		342B10D91FFED58C00A2D343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		342B10DC1FFED58C00A2D343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		342B10DF1FFED58C00A2D343 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E76337F7DF4F78A8DE508D62 /* Pods_OfflinePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OfflinePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91CAA5C23673C9B00290B60 /* VideoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoTableViewCell.h; sourceTree = "<group>"; };
 		E91CAA5D23673C9B00290B60 /* VideoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewCell.m; sourceTree = "<group>"; };
 		E91CAA6D23675D1300290B60 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 				223B44FE2003EC5700C6C60C /* Foundation.framework in Frameworks */,
 				223B44F82003EC3C00C6C60C /* MediaPlayer.framework in Frameworks */,
 				223B44FC2003EC4D00C6C60C /* UIKit.framework in Frameworks */,
+				7443CBBF41A12CFD6B94E59E /* Pods_OfflinePlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +109,7 @@
 				223B44FB2003EC4D00C6C60C /* UIKit.framework */,
 				223B44F92003EC4400C6C60C /* CoreGraphics.framework */,
 				223B44F72003EC3C00C6C60C /* MediaPlayer.framework */,
+				E76337F7DF4F78A8DE508D62 /* Pods_OfflinePlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 				342B10CF1FFED58C00A2D343 /* OfflinePlayer */,
 				342B10CE1FFED58C00A2D343 /* Products */,
 				223B44F62003EC3B00C6C60C /* Frameworks */,
+				457277B51D923B02AA24955E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +164,16 @@
 				342B10DF1FFED58C00A2D343 /* main.m */,
 			);
 			path = OfflinePlayer;
+			sourceTree = "<group>";
+		};
+		457277B51D923B02AA24955E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BAAC7213FB0431651CF99D2 /* Pods-OfflinePlayer.debug.xcconfig */,
+				24051E1CF124C8F4BF4DB314 /* Pods-OfflinePlayer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		E927934B236B25B600435AD4 /* TableViewCells */ = {
@@ -207,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 342B10E31FFED58C00A2D343 /* Build configuration list for PBXNativeTarget "OfflinePlayer" */;
 			buildPhases = (
+				BAFF86928DC8339FA142E57E /* [CP] Check Pods Manifest.lock */,
 				342B10C91FFED58C00A2D343 /* Sources */,
 				342B10CA1FFED58C00A2D343 /* Frameworks */,
 				342B10CB1FFED58C00A2D343 /* Resources */,
+				FEC76CA6054885C63894ADB8 /* [CP] Embed Pods Frameworks */,
+				C5AA6FAD179F7D919611D343 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAFF86928DC8339FA142E57E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OfflinePlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5AA6FAD179F7D919611D343 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OfflinePlayer/Pods-OfflinePlayer-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Brightcove-Player-Core/BCOVPUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCOVPUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OfflinePlayer/Pods-OfflinePlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC76CA6054885C63894ADB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OfflinePlayer/Pods-OfflinePlayer-frameworks.sh",
+				"${PODS_ROOT}/Brightcove-Player-Core/ios/dynamic/BrightcovePlayerSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcovePlayerSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OfflinePlayer/Pods-OfflinePlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		342B10C91FFED58C00A2D343 /* Sources */ = {
@@ -428,6 +517,7 @@
 		};
 		342B10E41FFED58C00A2D343 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BAAC7213FB0431651CF99D2 /* Pods-OfflinePlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +536,7 @@
 		};
 		342B10E51FFED58C00A2D343 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24051E1CF124C8F4BF4DB314 /* Pods-OfflinePlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

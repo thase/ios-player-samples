@@ -8,11 +8,27 @@
 import UIKit
 import BrightcovePlayerSDK
 
+//struct ConfigConstants {
+//    static let AccountID = "5434391461001"
+//    static let PolicyKey = "BCpkADawqM0T8lW3nMChuAbrcunBBHmh4YkNl5e6ZrKQwPiK_Y83RAOF4DP5tyBF_ONBVgrEjqW6fbV0nKRuHvjRU3E8jdT9WMTOXfJODoPML6NUDCYTwTHxtNlr5YdyGYaCPLhMUZ3Xu61L"
+//    static let PlaylistID = "brightcove-native-sdk-plist"
+//}
 struct ConfigConstants {
-    static let AccountID = "5434391461001"
-    static let PolicyKey = "BCpkADawqM0T8lW3nMChuAbrcunBBHmh4YkNl5e6ZrKQwPiK_Y83RAOF4DP5tyBF_ONBVgrEjqW6fbV0nKRuHvjRU3E8jdT9WMTOXfJODoPML6NUDCYTwTHxtNlr5YdyGYaCPLhMUZ3Xu61L"
+    static let AccountID = "6036648100001"
+    static let PolicyKey = "BCpkADawqM3jkEMLHhfUSDgyMVSicI1BKFojgyl3zG_N5wiQLzcYvvLUaIcJ5VHn3NNiTdOomVJW29l9k_mkfzHMvW5VEpRpH72uAPPbTP8_cdpI474AmW6rk6Z7JaHAhNNIBc0qEQ1v-GU6"
     static let PlaylistID = "brightcove-native-sdk-plist"
+    static let VideoID = "6103221105001"
 }
+//struct ConfigConstants {
+//    static let AccountID = "3981276734001"
+//    static let PolicyKey = "BCpkADawqM1zuWIUMaT4tHm_QLqJQCuJjob2vEdDNlojvvUgbJ0zRSmsXTpgaP5GaDtS30wAM4DLXERNZdJmZmVRVlohWZTQHYGKkKn_4bZHsObVYbX1-ZZ1mhoSwQI8n7y3EMBMRiaMR9v8"
+//    static let PlaylistID = "playlist_offline"
+//    static let VideoID = "6103221105001"
+//}
+
+
+
+
 
 // The Videos View Controller displays a list of HLS videos retrieved
 // from a Brightcove Dynamic Delivery account playlist.
@@ -105,16 +121,34 @@ class StreamingVideoViewController: BaseVideoViewController {
         let playbackServiceRequestFactory = BCOVPlaybackServiceRequestFactory(accountId: ConfigConstants.AccountID, policyKey: ConfigConstants.PolicyKey)
         
         let playbackService = BCOVPlaybackService(requestFactory: playbackServiceRequestFactory)
-        playbackService?.findPlaylist(withReferenceID: ConfigConstants.PlaylistID, parameters: queryParams, completion: { [weak self] (playlist: BCOVPlaylist?, jsonResponse: [AnyHashable:Any]?, error: Error?) in
+//        playbackService?.findPlaylist(withReferenceID: ConfigConstants.PlaylistID, parameters: queryParams, completion: { [weak self] (playlist: BCOVPlaylist?, jsonResponse: [AnyHashable:Any]?, error: Error?) in
+//
+//            self?.refreshControl.endRefreshing()
+//
+//            if let playlist = playlist, let videos = playlist.videos as? [BCOVVideo], let bitrate = self?.tabBarController?.settingsViewController()?.bitrate() {
+//                self?.videoManager.currentVideos = videos
+//                self?.videoManager.currentPlaylistTitle = playlist.properties[kBCOVPlaylistPropertiesKeyName] as? String
+//                self?.videoManager.currentPlaylistDescription = playlist.properties[kBCOVPlaylistPropertiesKeyDescription] as? String
+//
+//                self?.videoManager.usePlaylist(videos, withBitrate: bitrate)
+//            } else {
+//                print("No playlist for ID \"\(ConfigConstants.PlaylistID)\" was found.")
+//                self?.tableView.isHidden = true
+//                self?.unavailableView.isHidden = false
+//            }
+//
+//        })
+        playbackService?.findVideo(withVideoID: ConfigConstants.VideoID, parameters: queryParams,
+            completion: { [weak self] (video: BCOVVideo?, jsonResponse: [AnyHashable:Any]?, error: Error?) in
             
             self?.refreshControl.endRefreshing()
             
-            if let playlist = playlist, let videos = playlist.videos as? [BCOVVideo], let bitrate = self?.tabBarController?.settingsViewController()?.bitrate() {
-                self?.videoManager.currentVideos = videos
-                self?.videoManager.currentPlaylistTitle = playlist.properties[kBCOVPlaylistPropertiesKeyName] as? String
-                self?.videoManager.currentPlaylistDescription = playlist.properties[kBCOVPlaylistPropertiesKeyDescription] as? String
+            if let video = video as? BCOVVideo, let bitrate = self?.tabBarController?.settingsViewController()?.bitrate() {
+                self?.videoManager.currentVideos = [video]
+                self?.videoManager.currentPlaylistTitle = video.properties[kBCOVVideoPropertyKeyName] as? String
+                self?.videoManager.currentPlaylistDescription = video.properties[kBCOVVideoPropertyKeyDescription] as? String
                 
-                self?.videoManager.usePlaylist(videos, withBitrate: bitrate)
+                self?.videoManager.usePlaylist([video], withBitrate: bitrate)
             } else {
                 print("No playlist for ID \"\(ConfigConstants.PlaylistID)\" was found.")
                 self?.tableView.isHidden = true
@@ -122,6 +156,7 @@ class StreamingVideoViewController: BaseVideoViewController {
             }
             
         })
+
     }
 
     @objc private func analyticsStorageFullWarningNotificationReceived(_ notification: Notification) {

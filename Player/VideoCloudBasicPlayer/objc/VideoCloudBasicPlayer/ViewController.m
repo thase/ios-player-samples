@@ -7,10 +7,12 @@
 
 #import "ViewController.h"
 
-// ** Customize these values with your own account information **
+ ** Customize these values with your own account information **
 static NSString * const kViewControllerPlaybackServicePolicyKey = @"BCpkADawqM1W-vUOMe6RSA3pA6Vw-VWUNn5rL0lzQabvrI63-VjS93gVUugDlmBpHIxP16X8TSe5LSKM415UHeMBmxl7pqcwVY_AZ4yKFwIpZPvXE34TpXEYYcmulxJQAOvHbv2dpfq-S_cm";
 static NSString * const kViewControllerAccountID = @"3636334163001";
 static NSString * const kViewControllerVideoID = @"3666678807001";
+
+
 
 
 @interface ViewController () <BCOVPlaybackControllerDelegate, BCOVPUIPlayerViewDelegate>
@@ -76,13 +78,30 @@ static NSString * const kViewControllerVideoID = @"3666678807001";
     [self requestContentFromPlaybackService];
 }
 
+//- (void)requestContentFromPlaybackService
+//{
+//    [self.playbackService findVideoWithVideoID:kViewControllerVideoID parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
+//
+//        if (video)
+//        {
+//            [self.playbackController setVideos:@[ video ]];
+//        }
+//        else
+//        {
+//            NSLog(@"ViewController Debug - Error retrieving video playlist: `%@`", error);
+//        }
+//
+//    }];
+//}
+
 - (void)requestContentFromPlaybackService
 {
-    [self.playbackService findVideoWithVideoID:kViewControllerVideoID parameters:nil completion:^(BCOVVideo *video, NSDictionary *jsonResponse, NSError *error) {
+
+    [self.playbackService findPlaylistWithPlaylistID:kViewControllerPlaylistID parameters:nil completion:^(BCOVPlaylist *playlist, NSDictionary *jsonResponse, NSError *error) {
         
-        if (video)
+        if (playlist)
         {
-            [self.playbackController setVideos:@[ video ]];
+            [self.playbackController setVideos:playlist];
         }
         else
         {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6213332DC3A282ECB12C926F /* Pods_PlayerUICustomization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC63E19C0705CDCB1B9DB58 /* Pods_PlayerUICustomization.framework */; };
 		E9C263E5215D6FE80042F45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C263E4215D6FE80042F45D /* AppDelegate.swift */; };
 		E9C263E7215D6FE80042F45D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C263E6215D6FE80042F45D /* ViewController.swift */; };
 		E9C263EA215D6FE80042F45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C263E8215D6FE80042F45D /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E713B25C5AFC336D2ABDB77 /* Pods-PlayerUICustomization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerUICustomization.release.xcconfig"; path = "Target Support Files/Pods-PlayerUICustomization/Pods-PlayerUICustomization.release.xcconfig"; sourceTree = "<group>"; };
+		AACDE9901802341535E29C61 /* Pods-PlayerUICustomization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerUICustomization.debug.xcconfig"; path = "Target Support Files/Pods-PlayerUICustomization/Pods-PlayerUICustomization.debug.xcconfig"; sourceTree = "<group>"; };
+		DFC63E19C0705CDCB1B9DB58 /* Pods_PlayerUICustomization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayerUICustomization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C263E1215D6FE80042F45D /* PlayerUICustomization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerUICustomization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C263E4215D6FE80042F45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9C263E6215D6FE80042F45D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6213332DC3A282ECB12C926F /* Pods_PlayerUICustomization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AA00D434E4848B197EE7FDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AACDE9901802341535E29C61 /* Pods-PlayerUICustomization.debug.xcconfig */,
+				3E713B25C5AFC336D2ABDB77 /* Pods-PlayerUICustomization.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E64015773ECF6974B78972D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFC63E19C0705CDCB1B9DB58 /* Pods_PlayerUICustomization.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9C263D8215D6FE80042F45D = {
 			isa = PBXGroup;
 			children = (
 				E9C263E3215D6FE80042F45D /* PlayerUICustomization */,
 				E9C263E2215D6FE80042F45D /* Products */,
+				1AA00D434E4848B197EE7FDD /* Pods */,
+				9E64015773ECF6974B78972D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9C263F3215D6FE90042F45D /* Build configuration list for PBXNativeTarget "PlayerUICustomization" */;
 			buildPhases = (
+				20CFEAFDD1F436B1401AC3CA /* [CP] Check Pods Manifest.lock */,
 				E9C263DD215D6FE80042F45D /* Sources */,
 				E9C263DE215D6FE80042F45D /* Frameworks */,
 				E9C263DF215D6FE80042F45D /* Resources */,
+				5EDB726D13DB0C2C3AF045AC /* [CP] Embed Pods Frameworks */,
+				0213F711900AE176127251C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0213F711900AE176127251C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayerUICustomization/Pods-PlayerUICustomization-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Brightcove-Player-Core/BCOVPUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCOVPUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayerUICustomization/Pods-PlayerUICustomization-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20CFEAFDD1F436B1401AC3CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayerUICustomization-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EDB726D13DB0C2C3AF045AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayerUICustomization/Pods-PlayerUICustomization-frameworks.sh",
+				"${PODS_ROOT}/Brightcove-Player-Core/ios/dynamic/BrightcovePlayerSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcovePlayerSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayerUICustomization/Pods-PlayerUICustomization-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9C263DD215D6FE80042F45D /* Sources */ = {
@@ -288,10 +384,11 @@
 		};
 		E9C263F4215D6FE90042F45D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AACDE9901802341535E29C61 /* Pods-PlayerUICustomization.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XNV3M98BQL;
 				INFOPLIST_FILE = PlayerUICustomization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,10 +403,11 @@
 		};
 		E9C263F5215D6FE90042F45D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E713B25C5AFC336D2ABDB77 /* Pods-PlayerUICustomization.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XNV3M98BQL;
 				INFOPLIST_FILE = PlayerUICustomization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

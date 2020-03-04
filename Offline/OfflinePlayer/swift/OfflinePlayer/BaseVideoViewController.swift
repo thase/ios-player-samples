@@ -66,6 +66,28 @@ class BaseVideoViewController: UIViewController, BCOVPlaybackControllerDelegate 
         // Create the session provider chain
         let options = BCOVBasicSessionProviderOptions()
         options.sourceSelectionPolicy = BCOVBasicSourceSelectionPolicy.sourceSelectionHLS(withScheme: kBCOVSourceURLSchemeHTTPS)
+        
+        // HTTP Rendtion
+//        options.sourceSelectionPolicy = { (video:BCOVVideo?) -> BCOVSource? in
+//            let sources:[BCOVSource]! = video?.sources
+//            for source in sources {
+//                print("DeliveryMethodL \(source.deliveryMethod)")
+//                print("URL \(source.url)")
+//                let properties = source.properties;
+//                for property in properties! {
+//                    print("(key): \(property.key) : (value) \(property.value)")
+//                    // application/x-mpegURL
+//                    // application/dash+xml
+//                    //if(property.key == "type" && property.value == "application/dash+xml") {
+//
+//                    //}
+//                    return source;
+//                }
+//            }
+//
+//            return nil
+//        }
+        
         guard let basicSessionProvider = sdkManager?.createBasicSessionProvider(with: options), let authProxy = self.authProxy else {
             return
         }

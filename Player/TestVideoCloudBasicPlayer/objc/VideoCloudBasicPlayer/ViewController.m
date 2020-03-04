@@ -127,6 +127,18 @@ static NSString * const kViewControllerContentID = @"3666678807001";
     NSLog(@"Progress: %0.2f seconds", progress);
 }
 
+- (void)playbackController:(id<BCOVPlaybackController>)controller playbackSession:(id<BCOVPlaybackSession>)session didReceiveLifecycleEvent:(BCOVPlaybackSessionLifecycleEvent *)lifecycleEvent
+{
+    NSLog(@"### %@", lifecycleEvent.eventType);
+
+    if ([kBCOVPlaybackSessionLifecycleEventReady isEqualToString:lifecycleEvent.eventType])
+    {
+    }
+    else if ([kBCOVPlaybackSessionLifecycleEventEnd isEqualToString:lifecycleEvent.eventType])
+    {
+    }
+}
+
 #pragma mark - BCOVPUIPlayerViewDelegate
 
 - (void)pictureInPictureControllerDidStartPictureInPicture:(AVPictureInPictureController *)pictureInPictureController

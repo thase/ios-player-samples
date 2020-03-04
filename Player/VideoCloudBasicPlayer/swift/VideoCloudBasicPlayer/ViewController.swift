@@ -13,8 +13,9 @@ let kViewControllerPlaybackServicePolicyKey = "BCpkADawqM3n0ImwKortQqSZCgJMcyVbb
 let kViewControllerAccountID = "4800266849001"
 let kViewControllerVideoID = "5255514387001"
 
+
 class ViewController: UIViewController {
-    
+    //var currentSession : BCOVPlaybackSession?
     let sharedSDKManager = BCOVPlayerSDKManager.shared()
     let playbackService = BCOVPlaybackService(accountId: kViewControllerAccountID, policyKey: kViewControllerPlaybackServicePolicyKey)
     let playbackController :BCOVPlaybackController
@@ -76,6 +77,15 @@ extension ViewController: BCOVPlaybackControllerDelegate {
     
     func playbackController(_ controller: BCOVPlaybackController!, didAdvanceTo session: BCOVPlaybackSession!) {
         print("Advanced to new session")
+//        if let session = session {
+//            self.currentSession = session
+            if let currItem = session.player.currentItem {
+//  https://developer.apple.com/documentation/coremedia/kcmtextmarkupattribute_orthogonallinepositionpercentagerelativetowritingdirection?language=objc
+              let rule = AVTextStyleRule(textMarkupAttributes: [kCMTextMarkupAttribute_OrthogonalLinePositionPercentageRelativeToWritingDirection as String: 15])
+              // 15% from the top of the video
+              currItem.textStyleRules = [rule!]
+            }
+//        }
     }
     
     func playbackController(_ controller: BCOVPlaybackController!, playbackSession session: BCOVPlaybackSession!, didProgressTo progress: TimeInterval) {
