@@ -3,45 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E915F98F23F1FAA700F5A64A /* GoogleCastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E915F98E23F1FAA700F5A64A /* GoogleCastManager.swift */; };
-		E9FF7E6121BACA72000189E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF7E6021BACA72000189E0 /* AppDelegate.swift */; };
-		E9FF7E6321BACA72000189E0 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FF7E6221BACA72000189E0 /* PlayerViewController.swift */; };
-		E9FF7E6621BACA72000189E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FF7E6421BACA72000189E0 /* Main.storyboard */; };
-		E9FF7E6821BACA73000189E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FF7E6721BACA73000189E0 /* Assets.xcassets */; };
-		E9FF7E6B21BACA73000189E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FF7E6921BACA73000189E0 /* LaunchScreen.storyboard */; };
+		D6DAEAD323EDC1E200BAFF99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAEAD223EDC1E200BAFF99 /* AppDelegate.m */; };
+		D6DAEAD923EDC1E200BAFF99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAEAD823EDC1E200BAFF99 /* ViewController.m */; };
+		D6DAEADC23EDC1E200BAFF99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DAEADA23EDC1E200BAFF99 /* Main.storyboard */; };
+		D6DAEADE23EDC1E300BAFF99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6DAEADD23EDC1E300BAFF99 /* Assets.xcassets */; };
+		D6DAEAE123EDC1E300BAFF99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6DAEADF23EDC1E300BAFF99 /* LaunchScreen.storyboard */; };
+		D6DAEAE423EDC1E300BAFF99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DAEAE323EDC1E300BAFF99 /* main.m */; };
+		D6DAEAEB23EDC4B100BAFF99 /* Library.json in Resources */ = {isa = PBXBuildFile; fileRef = D6DAEAEA23EDC4B100BAFF99 /* Library.json */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E90C665F21BB164700924187 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		E915F98E23F1FAA700F5A64A /* GoogleCastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCastManager.swift; sourceTree = "<group>"; };
-		E9B758952278E3AA008D1362 /* BasicCastPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BasicCastPlayer.entitlements; sourceTree = "<group>"; };
-		E9FF7E5D21BACA72000189E0 /* BasicCastPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicCastPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9FF7E6021BACA72000189E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9FF7E6221BACA72000189E0 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
-		E9FF7E6521BACA72000189E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E9FF7E6721BACA73000189E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E9FF7E6A21BACA73000189E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E9FF7E6C21BACA73000189E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DAEACE23EDC1E200BAFF99 /* BasicPulsePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicPulsePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DAEAD123EDC1E200BAFF99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6DAEAD223EDC1E200BAFF99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6DAEAD723EDC1E200BAFF99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D6DAEAD823EDC1E200BAFF99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D6DAEADB23EDC1E200BAFF99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6DAEADD23EDC1E300BAFF99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6DAEAE023EDC1E300BAFF99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6DAEAE223EDC1E300BAFF99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DAEAE323EDC1E300BAFF99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6DAEAEA23EDC4B100BAFF99 /* Library.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Library.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E9FF7E5A21BACA72000189E0 /* Frameworks */ = {
+		D6DAEACB23EDC1E200BAFF99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,135 +41,147 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9FF7E5421BACA72000189E0 = {
+		8685B1F5AF316B36C25D7F3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E9FF7E5F21BACA72000189E0 /* BasicCastPlayer */,
-				E9FF7E5E21BACA72000189E0 /* Products */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6DAEAC523EDC1E200BAFF99 = {
+			isa = PBXGroup;
+			children = (
+				D6DAEAD023EDC1E200BAFF99 /* BasicPulsePlayer */,
+				D6DAEACF23EDC1E200BAFF99 /* Products */,
+				E6E22F15DE841387D81DA64E /* Pods */,
+				8685B1F5AF316B36C25D7F3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		E9FF7E5E21BACA72000189E0 /* Products */ = {
+		D6DAEACF23EDC1E200BAFF99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9FF7E5D21BACA72000189E0 /* BasicCastPlayer.app */,
+				D6DAEACE23EDC1E200BAFF99 /* BasicPulsePlayer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9FF7E5F21BACA72000189E0 /* BasicCastPlayer */ = {
+		D6DAEAD023EDC1E200BAFF99 /* BasicPulsePlayer */ = {
 			isa = PBXGroup;
 			children = (
-				E9B758952278E3AA008D1362 /* BasicCastPlayer.entitlements */,
-				E9FF7E6021BACA72000189E0 /* AppDelegate.swift */,
-				E9FF7E6221BACA72000189E0 /* PlayerViewController.swift */,
-				E915F98E23F1FAA700F5A64A /* GoogleCastManager.swift */,
-				E9FF7E6421BACA72000189E0 /* Main.storyboard */,
-				E9FF7E6721BACA73000189E0 /* Assets.xcassets */,
-				E9FF7E6921BACA73000189E0 /* LaunchScreen.storyboard */,
-				E9FF7E6C21BACA73000189E0 /* Info.plist */,
+				D6DAEAD123EDC1E200BAFF99 /* AppDelegate.h */,
+				D6DAEAD223EDC1E200BAFF99 /* AppDelegate.m */,
+				D6DAEADD23EDC1E300BAFF99 /* Assets.xcassets */,
+				D6DAEAE223EDC1E300BAFF99 /* Info.plist */,
+				D6DAEADF23EDC1E300BAFF99 /* LaunchScreen.storyboard */,
+				D6DAEAEA23EDC4B100BAFF99 /* Library.json */,
+				D6DAEAE323EDC1E300BAFF99 /* main.m */,
+				D6DAEADA23EDC1E200BAFF99 /* Main.storyboard */,
+				D6DAEAD723EDC1E200BAFF99 /* ViewController.h */,
+				D6DAEAD823EDC1E200BAFF99 /* ViewController.m */,
 			);
-			path = BasicCastPlayer;
+			path = BasicPulsePlayer;
+			sourceTree = "<group>";
+		};
+		E6E22F15DE841387D81DA64E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9FF7E5C21BACA72000189E0 /* BasicCastPlayer */ = {
+		D6DAEACD23EDC1E200BAFF99 /* BasicPulsePlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9FF7E6F21BACA73000189E0 /* Build configuration list for PBXNativeTarget "BasicCastPlayer" */;
+			buildConfigurationList = D6DAEAE723EDC1E300BAFF99 /* Build configuration list for PBXNativeTarget "BasicPulsePlayer" */;
 			buildPhases = (
-				E9FF7E5921BACA72000189E0 /* Sources */,
-				E9FF7E5A21BACA72000189E0 /* Frameworks */,
-				E9FF7E5B21BACA72000189E0 /* Resources */,
-				E90C665F21BB164700924187 /* Embed Frameworks */,
+				D6DAEACA23EDC1E200BAFF99 /* Sources */,
+				D6DAEACB23EDC1E200BAFF99 /* Frameworks */,
+				D6DAEACC23EDC1E200BAFF99 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BasicCastPlayer;
-			productName = BasicCastPlayer;
-			productReference = E9FF7E5D21BACA72000189E0 /* BasicCastPlayer.app */;
+			name = BasicPulsePlayer;
+			productName = BasicPulsePlayer;
+			productReference = D6DAEACE23EDC1E200BAFF99 /* BasicPulsePlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E9FF7E5521BACA72000189E0 /* Project object */ = {
+		D6DAEAC623EDC1E200BAFF99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Brightcove, Inc";
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Carlos Ceja";
 				TargetAttributes = {
-					E9FF7E5C21BACA72000189E0 = {
-						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.AccessWiFi = {
-								enabled = 1;
-							};
-						};
+					D6DAEACD23EDC1E200BAFF99 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = E9FF7E5821BACA72000189E0 /* Build configuration list for PBXProject "BasicCastPlayer" */;
-			compatibilityVersion = "Xcode 10.0";
+			buildConfigurationList = D6DAEAC923EDC1E200BAFF99 /* Build configuration list for PBXProject "BasicPulsePlayer" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = E9FF7E5421BACA72000189E0;
-			productRefGroup = E9FF7E5E21BACA72000189E0 /* Products */;
+			mainGroup = D6DAEAC523EDC1E200BAFF99;
+			productRefGroup = D6DAEACF23EDC1E200BAFF99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9FF7E5C21BACA72000189E0 /* BasicCastPlayer */,
+				D6DAEACD23EDC1E200BAFF99 /* BasicPulsePlayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E9FF7E5B21BACA72000189E0 /* Resources */ = {
+		D6DAEACC23EDC1E200BAFF99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9FF7E6B21BACA73000189E0 /* LaunchScreen.storyboard in Resources */,
-				E9FF7E6821BACA73000189E0 /* Assets.xcassets in Resources */,
-				E9FF7E6621BACA72000189E0 /* Main.storyboard in Resources */,
+				D6DAEAE123EDC1E300BAFF99 /* LaunchScreen.storyboard in Resources */,
+				D6DAEAEB23EDC4B100BAFF99 /* Library.json in Resources */,
+				D6DAEADE23EDC1E300BAFF99 /* Assets.xcassets in Resources */,
+				D6DAEADC23EDC1E200BAFF99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E9FF7E5921BACA72000189E0 /* Sources */ = {
+		D6DAEACA23EDC1E200BAFF99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E915F98F23F1FAA700F5A64A /* GoogleCastManager.swift in Sources */,
-				E9FF7E6321BACA72000189E0 /* PlayerViewController.swift in Sources */,
-				E9FF7E6121BACA72000189E0 /* AppDelegate.swift in Sources */,
+				D6DAEAD923EDC1E200BAFF99 /* ViewController.m in Sources */,
+				D6DAEAD323EDC1E200BAFF99 /* AppDelegate.m in Sources */,
+				D6DAEAE423EDC1E300BAFF99 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E9FF7E6421BACA72000189E0 /* Main.storyboard */ = {
+		D6DAEADA23EDC1E200BAFF99 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9FF7E6521BACA72000189E0 /* Base */,
+				D6DAEADB23EDC1E200BAFF99 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E9FF7E6921BACA73000189E0 /* LaunchScreen.storyboard */ = {
+		D6DAEADF23EDC1E300BAFF99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9FF7E6A21BACA73000189E0 /* Base */,
+				D6DAEAE023EDC1E300BAFF99 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -187,7 +189,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E9FF7E6D21BACA73000189E0 /* Debug */ = {
+		D6DAEAE523EDC1E300BAFF99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +221,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -238,17 +239,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		E9FF7E6E21BACA73000189E0 /* Release */ = {
+		D6DAEAE623EDC1E300BAFF99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +279,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -293,50 +291,52 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E9FF7E7021BACA73000189E0 /* Debug */ = {
+		D6DAEAE823EDC1E300BAFF99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BasicCastPlayer/BasicCastPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BasicCastPlayer/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = BasicPulsePlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brightcove.BasicCastPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightcove.BasicPulsePlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E9FF7E7121BACA73000189E0 /* Release */ = {
+		D6DAEAE923EDC1E300BAFF99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = BasicCastPlayer/BasicCastPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = BasicCastPlayer/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = BasicPulsePlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brightcove.BasicCastPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightcove.BasicPulsePlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -344,25 +344,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9FF7E5821BACA72000189E0 /* Build configuration list for PBXProject "BasicCastPlayer" */ = {
+		D6DAEAC923EDC1E200BAFF99 /* Build configuration list for PBXProject "BasicPulsePlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9FF7E6D21BACA73000189E0 /* Debug */,
-				E9FF7E6E21BACA73000189E0 /* Release */,
+				D6DAEAE523EDC1E300BAFF99 /* Debug */,
+				D6DAEAE623EDC1E300BAFF99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9FF7E6F21BACA73000189E0 /* Build configuration list for PBXNativeTarget "BasicCastPlayer" */ = {
+		D6DAEAE723EDC1E300BAFF99 /* Build configuration list for PBXNativeTarget "BasicPulsePlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9FF7E7021BACA73000189E0 /* Debug */,
-				E9FF7E7121BACA73000189E0 /* Release */,
+				D6DAEAE823EDC1E300BAFF99 /* Debug */,
+				D6DAEAE923EDC1E300BAFF99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E9FF7E5521BACA72000189E0 /* Project object */;
+	rootObject = D6DAEAC623EDC1E200BAFF99 /* Project object */;
 }
